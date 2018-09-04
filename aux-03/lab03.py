@@ -1,16 +1,8 @@
-
-# coding: utf-8
-
-# In[4]:
-
-
 tipo_do_objeto = input()
 caractere = input()
 tipo_ok = True                     # verifica se é um dos tipos esperados (Q,L,C,R,P)
 dimensao_ok = True                 # verifica se a dimensão é pelo menos 3
 lados_diferentes = True            # verifica se possui lado (Q,L,C) ou lados (R,P)
-
-
 
 if tipo_do_objeto == "R" or tipo_do_objeto == "P":
     medida_da_largura = int(input())
@@ -27,8 +19,6 @@ elif tipo_do_objeto == "Q" or tipo_do_objeto == "L" or tipo_do_objeto == "C":
 else:
     tipo_ok = False
     print("Objeto incorreto.")
-
-
 
 def print_quadrado(caract, lado):
     internos = (lado-2) * " "
@@ -82,8 +72,6 @@ def print_cruz(caract, lado):
     for i in range(1, lado-1):
         print(lado * " " + caract, caract, sep = internos)
     print(vazio, cheio, sep='')
-
-
     
 if tipo_ok and dimensao_ok:
     if lados_diferentes:
@@ -98,4 +86,3 @@ if tipo_ok and dimensao_ok:
             print_losango(caractere, medida_do_lado)
         elif tipo_do_objeto == "C":
             print_cruz(caractere, medida_do_lado)
-
