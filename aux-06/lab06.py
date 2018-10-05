@@ -10,7 +10,7 @@
 
 # ### Inicializando os diferentes dicionários:
 
-# In[ ]:
+# In[1]:
 
 
 dic = {}                 # times
@@ -23,7 +23,7 @@ dic_saldo_de_gols = {}   # saldo de gols
 
 # ### Recebendo o número de times do campeonato:
 
-# In[ ]:
+# In[2]:
 
 
 n = int(input())
@@ -31,7 +31,7 @@ n = int(input())
 
 # ### Função que adiciona o time ao dicionário:
 
-# In[ ]:
+# In[3]:
 
 
 def add_time_dic(time):
@@ -45,7 +45,7 @@ def add_time_dic(time):
 
 # ### Função que computa os gols da partida:
 
-# In[ ]:
+# In[4]:
 
 
 def comp_gols_part(mandante, visitante, gols_mandante, gols_visitante):
@@ -61,7 +61,7 @@ def comp_gols_part(mandante, visitante, gols_mandante, gols_visitante):
 
 # ### Função que distribui os pontos obtidos pelo time na partida:
 
-# In[ ]:
+# In[5]:
 
 
 def comp_pt_part(mandante, visitante, gols_mandante, gols_visitante):
@@ -79,7 +79,7 @@ def comp_pt_part(mandante, visitante, gols_mandante, gols_visitante):
 
 # ### Código para calcular a classificação dos times no campeonato:
 
-# In[ ]:
+# In[6]:
 
 
 for i in range(n**2-n):
@@ -103,7 +103,7 @@ for i in range(n**2-n):
 
 # ### Código para exibir a classificação dos times no campeonato:
 
-# In[ ]:
+# In[7]:
 
 
 for t in sorted(pt):
@@ -112,7 +112,7 @@ for t in sorted(pt):
 
 # ### Função para calcular o time vencedor do campeonato:
 
-# In[ ]:
+# In[8]:
 
 
 def calc_vencedor(pt, vit, dic_saldo_de_gols, dic_gpro):
@@ -153,7 +153,7 @@ def calc_vencedor(pt, vit, dic_saldo_de_gols, dic_gpro):
 
 # ### Código para mostrar o time vencedor do campeonato:
 
-# In[ ]:
+# In[9]:
 
 
 calc_vencedor(pt, vit, dic_saldo_de_gols, dic_gpro)

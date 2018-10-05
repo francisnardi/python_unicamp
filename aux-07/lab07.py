@@ -88,7 +88,7 @@ print("Media das provas:", format(mp, ".1f"))
 
 # ### Calculando a média global das notas:
 
-# In[16]:
+# In[6]:
 
 
 media_global = 0.6 * mp + 0.3 * ml + 0.1 * mac
@@ -97,7 +97,7 @@ media_global = 0.6 * mp + 0.3 * ml + 0.1 * mac
 
 # ### Recebendo a frequência do aluno:
 
-# In[17]:
+# In[7]:
 
 
 frequencia = float(input())
@@ -105,7 +105,7 @@ frequencia = float(input())
 
 # ### Função para calcular aprovação:
 
-# In[20]:
+# In[8]:
 
 
 def calc_aprov(frequencia, media_global, mac, ml, mp):
@@ -134,7 +134,7 @@ def calc_aprov(frequencia, media_global, mac, ml, mp):
 
 # ### Código para calcular aprovação:
 
-# In[21]:
+# In[9]:
 
 
 calc_aprov(frequencia, media_global, mac, ml, mp)
